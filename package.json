@@ -1,0 +1,52 @@
+{
+  "name": "@interlay/btc-relay-sol",
+  "version": "0.3.0",
+  "description": "BTC Relay in Solidity",
+  "dependencies": {
+    "@summa-tx/bitcoin-spv-sol": "3.0.0",
+    "bech32": "^1.1.4",
+    "bitcoinjs-lib": "^5.1.7"
+  },
+  "devDependencies": {
+    "@nomiclabs/buidler": "^1.1.2",
+    "@nomiclabs/buidler-ethers": "^1.1.2",
+    "@nomiclabs/buidler-etherscan": "^1.1.2",
+    "@nomiclabs/buidler-ganache": "^1.3.3",
+    "@nomiclabs/buidler-waffle": "^1.1.2",
+    "@types/chai": "^4.2.8",
+    "@types/mocha": "^7.0.1",
+    "@types/node": "^13.7.0",
+    "buidler-typechain": "0.0.5",
+    "chai": "^4.2.0",
+    "ethereum-waffle": "^2.3.2",
+    "ethers": "^4.0.44",
+    "ts-generator": "0.0.8",
+    "ts-node": "^8.6.2",
+    "typechain": "^1.0.4",
+    "typechain-target-ethers": "^1.0.4",
+    "typechain-target-truffle": "^1.0.2",
+    "typechain-target-web3-v1": "^1.0.4",
+    "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "build": "npm run compile && npx buidler typechain",
+    "compile": "npx buidler compile",
+    "test": "npx buidler test",
+    "deploy": "npx buidler run scripts/deploy.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/interlay/btc-relay-sol.git"
+  },
+  "maintainers": [
+    "Gregory Hill",
+    "Alexei Zamyatin",
+    "Dominik Harz",
+    "Daniel Perez"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/interlay/btc-relay-sol/issues"
+  },
+  "homepage": "https://gitlab.com/interlay/btc-relay-sol#readme"
+}
